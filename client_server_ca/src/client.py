@@ -32,7 +32,6 @@ import sys
 # If verification succeeds, save the file
 # Otherwise discard it
 from Crypto.PublicKey import RSA
-from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import padding, ec
 from cryptography.exceptions import InvalidSignature
 import socket
@@ -42,7 +41,6 @@ from pathlib import Path
 import os
 from Crypto.Cipher import PKCS1_OAEP
 from hashlib import sha256
-from Crypto.PublicKey import RSA
 from OpenSSL import crypto
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from ca import CA
