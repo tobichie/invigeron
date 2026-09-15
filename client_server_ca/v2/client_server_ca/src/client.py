@@ -42,7 +42,6 @@ from pathlib import Path
 import os
 from Crypto.Cipher import PKCS1_OAEP
 from hashlib import sha256
-from Crypto.PublicKey import RSA
 from OpenSSL import crypto
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from ca import CA
@@ -50,7 +49,6 @@ from cryptography import x509
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.backends import default_backend
 from cryptography.x509.oid import NameOID
-from cryptography.hazmat.primitives import hashes
 from datetime import datetime, timezone, timedelta
 from cryptography.hazmat.primitives import serialization
 import uuid
