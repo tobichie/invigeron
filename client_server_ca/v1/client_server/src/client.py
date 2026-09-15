@@ -38,7 +38,6 @@ from pathlib import Path
 import os
 from Crypto.Cipher import PKCS1_OAEP
 from hashlib import sha256
-from Crypto.PublicKey import RSA
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 
